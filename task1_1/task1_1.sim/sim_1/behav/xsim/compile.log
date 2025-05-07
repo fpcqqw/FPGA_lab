@@ -1,0 +1,23 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/fpgaprog02/Downloads/materials_t1/components.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DFFNRX1
+INFO: [VRFC 10-311] analyzing module NAND2
+INFO: [VRFC 10-311] analyzing module AND2
+INFO: [VRFC 10-311] analyzing module NOR2
+INFO: [VRFC 10-311] analyzing module OR2
+INFO: [VRFC 10-311] analyzing module INVX1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/fpgaprog02/Downloads/materials_t1/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blackbox0_W3
+INFO: [VRFC 10-311] analyzing module blackbox0_W13
+INFO: [VRFC 10-311] analyzing module blackbox0_W8
+INFO: [VRFC 10-311] analyzing module blackbox0_W19_1
+INFO: [VRFC 10-311] analyzing module blackbox0_W1
+INFO: [VRFC 10-311] analyzing module blackbox1_W3_MAX6
+INFO: [VRFC 10-311] analyzing module blackbox2_ST_W3_IN0_W4_IN1_W4_IN2_W4_IN3_W8_OUT0_W5_OUT1_W8_OUT2_W4_OUT3_W4
+INFO: [VRFC 10-311] analyzing module blackbox3_s_IN0_W5_IN1_W8
+INFO: [VRFC 10-311] analyzing module blackbox3_IN_W4
+INFO: [VRFC 10-311] analyzing module blackbox4_ST_W3_IN0_W13_IN1_W19_OUT0_W19_OUT1_W13_CONST13
+INFO: [VRFC 10-311] analyzing module blackbox5_IN0_W19_IN1_W13_OUT_W19
+INFO: [VRFC 10-311] analyzing module blackbox0_W19_0
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/fpgaprog02/Schreibtisch/FPGA_lab/task1_1/task1_1.srcs/sim_1/new/testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
