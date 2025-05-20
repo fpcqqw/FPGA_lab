@@ -1,8 +1,9 @@
 0.7
 2020.2
-Oct 14 2022
-05:07:14
-/home/fpgaprog02/Downloads/materials_t1/components.v,1741111951,verilog,,/home/fpgaprog02/Downloads/materials_t1/top.v,,AND2;DFFNRX1;INVX1;NAND2;NOR2;OR2,,,,,,,,
-/home/fpgaprog02/Downloads/materials_t1/top.v,1741799473,verilog,,/home/fpgaprog02/Schreibtisch/FPGA_lab/task1_1/task1_1.srcs/sim_1/new/testbench.v,,blackbox0_W1;blackbox0_W13;blackbox0_W19_0;blackbox0_W19_1;blackbox0_W3;blackbox0_W8;blackbox1_W3_MAX6;blackbox2_ST_W3_IN0_W4_IN1_W4_IN2_W4_IN3_W8_OUT0_W5_OUT1_W8_OUT2_W4_OUT3_W4;blackbox3_IN_W4;blackbox3_s_IN0_W5_IN1_W8;blackbox4_ST_W3_IN0_W13_IN1_W19_OUT0_W19_OUT1_W13_CONST13;blackbox5_IN0_W19_IN1_W13_OUT_W19;top,,,,,,,,
-/home/fpgaprog02/Schreibtisch/FPGA_lab/task1_1/task1_1.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,,,,,,,
-/home/fpgaprog02/Schreibtisch/FPGA_lab/task1_1/task1_1.srcs/sim_1/new/testbench.v,1746629285,verilog,,,,testbench,,,,,,,,
+Nov  8 2024
+22:36:57
+C:/Users/Jenny2/Documents/02Semester/FPGA_lab/task1_1/materials_t1/components.v,1747063531,verilog,,C:/Users/Jenny2/Documents/02Semester/FPGA_lab/task1_1/materials_t1/top.v,,AND2;DFFNRX1;INVX1;NAND2;NOR2;OR2,,,,,,,,
+C:/Users/Jenny2/Documents/02Semester/FPGA_lab/task1_1/materials_t1/top.v,1747063531,verilog,,C:/Users/Jenny2/Documents/02Semester/FPGA_lab/task1_1/task1_1.srcs/sim_1/new/testbench.v,,blackbox0_W1;blackbox0_W13;blackbox0_W19_0;blackbox0_W19_1;blackbox0_W3;blackbox0_W8;blackbox1_W3_MAX6;blackbox2_ST_W3_IN0_W4_IN1_W4_IN2_W4_IN3_W8_OUT0_W5_OUT1_W8_OUT2_W4_OUT3_W4;blackbox3_IN_W4;blackbox3_s_IN0_W5_IN1_W8;blackbox4_ST_W3_IN0_W13_IN1_W19_OUT0_W19_OUT1_W13_CONST13;blackbox5_IN0_W19_IN1_W13_OUT_W19;top,,,,,,,,
+C:/Users/Jenny2/Documents/02Semester/FPGA_lab/task1_1/new_top.v,1747744595,verilog,,C:/Users/Jenny2/Documents/02Semester/FPGA_lab/task1_1/task1_1.srcs/sim_1/new/testbench.v,,new_top,,,,,,,,
+C:/Users/Jenny2/Documents/02Semester/FPGA_lab/task1_1/task1_1.sim/sim_1/behav/xsim/glbl.v,1746953918,verilog,,,,glbl,,,,,,,,
+C:/Users/Jenny2/Documents/02Semester/FPGA_lab/task1_1/task1_1.srcs/sim_1/new/testbench.v,1747744684,verilog,,,,testbench,,,,,,,,

@@ -1,7 +1,6 @@
 # compile verilog/system verilog design source files
 verilog xil_defaultlib  \
-"../../../../../../../Downloads/materials_t1/components.v" \
-"../../../../../../../Downloads/materials_t1/top.v" \
+"../../../../new_top.v" \
 "../../../../task1_1.srcs/sim_1/new/testbench.v" \
 
 # compile glbl module
