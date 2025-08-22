@@ -1,5 +1,9 @@
 `timescale 1ns / 1ps
 
+//Final parameters: a =   5, b =   8, c =  -4, d =   3, e =   6, f =  -2, g =  13
+//Final function: F(x,y,z) =   5x^2 +   8x +  -4y^2 +   3y +  6z^2 +  -2z +  13
+
+
 module testbench();
     reg  clk, rst, en;
     
@@ -19,18 +23,16 @@ module testbench();
         end
      end
      
-    initial begin
-    en = 1;
+    initial begin 
     rst = 0;
     #10 
-    rst = 1;
     in0 = 0;
     in1 = 0;
     in2 = 0;
-   
-    //@(posedge done);
-    //#10
-    
+    #10
+    rst = 1;
+    en = 1;
+
     @(posedge done);
     g = out;
     $display("g = %d", g);
