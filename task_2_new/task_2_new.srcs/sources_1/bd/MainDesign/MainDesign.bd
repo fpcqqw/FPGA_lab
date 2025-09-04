@@ -1,0 +1,81 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x5E8241D15E8241D1",
+      "device": "xc7z020clg400-1",
+      "gen_directory": "../../../../task_2_new.gen/sources_1/bd/MainDesign",
+      "name": "MainDesign",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2024.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "BasicLEDController_0": ""
+    },
+    "ports": {
+      "led": {
+        "direction": "O",
+        "left": "3",
+        "right": "0"
+      },
+      "sysclk": {
+        "direction": "I"
+      },
+      "sw": {
+        "direction": "I",
+        "left": "1",
+        "right": "0"
+      }
+    },
+    "components": {
+      "BasicLEDController_0": {
+        "vlnv": "xilinx.com:module_ref:BasicLEDController:1.0",
+        "ip_revision": "1",
+        "xci_name": "MainDesign_BasicLEDController_0_0",
+        "xci_path": "ip\\MainDesign_BasicLEDController_0_0\\MainDesign_BasicLEDController_0_0.xci",
+        "inst_hier_path": "BasicLEDController_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "BasicLEDController",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "sysclk": {
+            "direction": "I"
+          },
+          "sw": {
+            "direction": "I",
+            "left": "1",
+            "right": "0"
+          },
+          "led": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "nets": {
+      "BasicLEDController_0_led": {
+        "ports": [
+          "BasicLEDController_0/led",
+          "led"
+        ]
+      },
+      "sw_1": {
+        "ports": [
+          "sw",
+          "BasicLEDController_0/sw"
+        ]
+      },
+      "sysclk_1": {
+        "ports": [
+          "sysclk",
+          "BasicLEDController_0/sysclk"
+        ]
+      }
+    }
+  }
+}

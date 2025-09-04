@@ -1,0 +1,14 @@
+verilog xil_defaultlib --include "C:/Xilinx/Vivado/2024.2/data/xilinx_vip/include" --include "../../../../task3.gen/sources_1/bd/block_design_top/ipshared/ec67/hdl" --include "../../../../task3.gen/sources_1/bd/block_design_top/ipshared/86fe/hdl" \
+"../../../bd/block_design_top/ip/block_design_top_processing_system7_0_0_3/sim/block_design_top_processing_system7_0_0.v" \
+"../../../bd/block_design_top/ip/block_design_top_xlslice_0_0_1/sim/block_design_top_xlslice_0_0.v" \
+"../../../bd/block_design_top/ip/block_design_top_xlslice_0_1/sim/block_design_top_xlslice_0_1.v" \
+"../../../bd/block_design_top/ip/block_design_top_xlslice_0_2/sim/block_design_top_xlslice_0_2.v" \
+"../../../bd/block_design_top/ip/block_design_top_xlslice_1_0/sim/block_design_top_xlslice_1_0.v" \
+"../../../bd/block_design_top/ip/block_design_top_xlslice_2_0/sim/block_design_top_xlslice_2_0.v" \
+"../../../bd/block_design_top/ip/block_design_top_xlslice_0_3/sim/block_design_top_xlslice_0_3.v" \
+"../../../bd/block_design_top/sim/block_design_top.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

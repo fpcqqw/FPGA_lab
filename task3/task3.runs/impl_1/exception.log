@@ -1,0 +1,4 @@
+ERROR: Exception caught trying to open file C:\Users\Jenny2\Documents\02Semester\FPGA_lab\task3\task3.runs\impl_1/runme.log
+	Exception name: Error
+	Exception error code: 70
+	Exception message: Erlaubnis verweigert.

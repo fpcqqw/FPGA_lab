@@ -1,0 +1,6 @@
+Time resolution is 1 ps
+Add: out=      15 done=1
+Sub: out=       7 done=1
+Mult: out=      20 done=1
+new_top: out=       0 done=0
+$stop called at time : 146 ns : File "C:/Users/Jenny2/Documents/02Semester/FPGA_lab/task3/task3.srcs/sim_1/new/testbench.v" Line 100

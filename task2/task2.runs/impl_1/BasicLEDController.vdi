@@ -1,0 +1,75 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Wed Jun  4 17:06:39 2025
+# Process ID         : 14468
+# Current directory  : C:/Users/Jenny2/Documents/02Semester/FPGA_lab/task2/task2.runs/impl_1
+# Command line       : vivado.exe -log BasicLEDController.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source BasicLEDController.tcl -notrace
+# Log file           : C:/Users/Jenny2/Documents/02Semester/FPGA_lab/task2/task2.runs/impl_1/BasicLEDController.vdi
+# Journal file       : C:/Users/Jenny2/Documents/02Semester/FPGA_lab/task2/task2.runs/impl_1\vivado.jou
+# Running On         : Jenny
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : AMD Ryzen 9 5900HX with Radeon Graphics        
+# CPU Frequency      : 3294 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16542 MB
+# Swap memory        : 7247 MB
+# Total Virtual      : 23789 MB
+# Available Virtual  : 3880 MB
+#-----------------------------------------------------------
+source BasicLEDController.tcl -notrace
+Command: link_design -top BasicLEDController -part xc7z020clg400-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 612.332 ; gain = 0.000
+INFO: [Project 1-479] Netlist was created with Vivado 2024.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/Jenny2/Documents/02Semester/FPGA_lab/task2/task2.srcs/constrs_1/imports/sources/PYNQ-Z2 v1.0.xdc]
+CRITICAL WARNING: [Netlist 29-177] Cannot set property 'FIOSTANDARD' because the property does not exist. [C:/Users/Jenny2/Documents/02Semester/FPGA_lab/task2/task2.srcs/constrs_1/imports/sources/PYNQ-Z2 v1.0.xdc:15]
+Resolution: Create this property using create_property command before setting it.
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [C:/Users/Jenny2/Documents/02Semester/FPGA_lab/task2/task2.srcs/constrs_1/imports/sources/PYNQ-Z2 v1.0.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Jenny2/Documents/02Semester/FPGA_lab/task2/task2.srcs/constrs_1/imports/sources/PYNQ-Z2 v1.0.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [C:/Users/Jenny2/Documents/02Semester/FPGA_lab/task2/task2.srcs/constrs_1/imports/sources/PYNQ-Z2 v1.0.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Jenny2/Documents/02Semester/FPGA_lab/task2/task2.srcs/constrs_1/imports/sources/PYNQ-Z2 v1.0.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [C:/Users/Jenny2/Documents/02Semester/FPGA_lab/task2/task2.srcs/constrs_1/imports/sources/PYNQ-Z2 v1.0.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Jenny2/Documents/02Semester/FPGA_lab/task2/task2.srcs/constrs_1/imports/sources/PYNQ-Z2 v1.0.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [C:/Users/Jenny2/Documents/02Semester/FPGA_lab/task2/task2.srcs/constrs_1/imports/sources/PYNQ-Z2 v1.0.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Jenny2/Documents/02Semester/FPGA_lab/task2/task2.srcs/constrs_1/imports/sources/PYNQ-Z2 v1.0.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/Jenny2/Documents/02Semester/FPGA_lab/task2/task2.srcs/constrs_1/imports/sources/PYNQ-Z2 v1.0.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+CRITICAL WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'MainDesign_BasicLEDController_0_0' instantiated as 'MainDesign_i/BasicLEDController_0' [c:/Users/Jenny2/Documents/02Semester/FPGA_lab/task2/task2.gen/sources_1/bd/MainDesign/synth/MainDesign.v:26]
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 749.109 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+5 Infos, 4 Warnings, 6 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:19 . Memory (MB): peak = 753.129 ; gain = 386.469
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+ERROR: [DRC INBB-3] Black Box Instances: Cell 'MainDesign_i/BasicLEDController_0' of type 'MainDesign_BasicLEDController_0_0' has undefined contents and is considered a black box.  The contents of this cell must be defined for opt_design to complete successfully.
+INFO: [Project 1-461] DRC finished with 1 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+ERROR: [Vivado_Tcl 4-78] Error(s) found during DRC. Opt_design not run.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 772.453 ; gain = 19.324
+INFO: [Common 17-83] Releasing license: Implementation
+10 Infos, 4 Warnings, 6 Critical Warnings and 2 Errors encountered.
+opt_design failed
+ERROR: [Common 17-39] 'opt_design' failed due to earlier errors.
+
+INFO: [Common 17-206] Exiting Vivado at Wed Jun  4 17:07:18 2025...

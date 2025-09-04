@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../task3.gen/sources_1/bd/block_design_top/ipshared/ec67/hdl" --include "../../../../task3.gen/sources_1/bd/block_design_top/ipshared/86fe/hdl" --include "C:/Xilinx/Vivado/2024.2/data/xilinx_vip/include" \
+"../../../../task3.srcs/sources_1/imports/task1_1/new_top.v" \
+"../../../../task3.srcs/sources_1/new/task3.v" \
+"../../../../task3.srcs/sim_1/new/testbench.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
