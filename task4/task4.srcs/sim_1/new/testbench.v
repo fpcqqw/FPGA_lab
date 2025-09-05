@@ -1,99 +1,86 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 03.09.2025 16:03:06
-// Design Name: 
-// Module Name: testbench
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
 
+module new_top_tb();
 
-module testbench();
-    reg sysclk;
-    reg [1:0] btn;       // btn[0] = reset, btn[1] = set
-    reg [1:0] sw;        // sw[1] = trigger, sw[0] = bit value
+    // Testbench-Signale
+    reg sysclk, rst;
+    reg [1:0] btn;
+    reg [1:0] sw;
+    wire [7:0] guessSequence;
+    wire [7:0] secretSequence;
 
-    wire [3:0] led;  // bit count or match count
+    wire [3:0] led;
     wire led4_b, led4_g, led4_r;
     wire led5_b, led5_g, led5_r;
 
-    // Clock generation
-    initial sysclk = 0;
-    always #5 sysclk = ~sysclk; // 100MHz Clock (10ns Period)
-
-    new_top example (
+    // DUT (Device under Test)
+    new_top uut (
         .sysclk(sysclk),
-        .btn(btn),       
-        .sw(sw),       
-        .led(led),  
-        .led4_b(led4_b), 
-        .led4_g(led4_g), 
-        .led4_r(led4_r),
-        .led5_b(led5_b), 
-        .led5_g(led5_g), 
-        .led5_r(led5_r)
-        );
+        .rst(rst),
+        .btn(btn),
+        .sw(sw),
+        .led(led),
+        .led4_b(led4_b), .led4_g(led4_g), .led4_r(led4_r),
+        .led5_b(led5_b), .led5_g(led5_g), .led5_r(led5_r)
+        // .debug_secret(secretSequence),
+        // .debug_guess(guessSequence)
+    );
 
-    always @(posedge sysclk) begin
+    // Clock-Generator (100 MHz → Periode = 10ns)
+    initial sysclk = 0;
+    always #5 sysclk = ~sysclk;
+
+    // Hilfstask: Bit eingeben
+    task press_bit(input bit_value);
+        begin
+            sw[0] = bit_value;   // Wert setzen
+            sw[1] = 0; #50;      // Trigger low
+            sw[1] = 1; #50;      // Trigger high (Flanke)
+            sw[1] = 0; #50;      // zurück low
+            // $display("secretSequence: %b", secretSequence);
+            // $display("guessSequence: %b", guessSequence);
+            $display("RGB4: %d%d%d", led4_r, led4_g, led4_b);
+        end
+    endtask
+
+    initial begin
+        // Initialwerte
+        sw  = 2'b00;
+
+        // START → SET_SECRET (btn=2'b11)
         btn = 2'b11;
-        sw  = 0;
-        #10;
-        $display("Enering secret sequence: 01100100");
-        $display("RGB LED4: %d%d%d, RGB LED5: %d%d%d", led4_r, led4_g, led4_b, led5_r, led5_g, led5_b);
-        $display("LED counter: %d", led);
-        sw[0] = 0; sw[1] = 1; #5; sw[1] = 0; $display("LED counter: %d", led);
-        #5;
-        sw[0] = 1; sw[1] = 1; #5; sw[1] = 0; $display("LED counter: %d", led);
-        #5;
-        sw[0] = 1; sw[1] = 1; #5; sw[1] = 0; $display("LED counter: %d", led);
-        #5;
-        sw[0] = 0; sw[1] = 1; #5; sw[1] = 0; $display("LED counter: %d", led);
-        #5;
-        sw[0] = 0; sw[1] = 1; #5; sw[1] = 0; $display("LED counter: %d", led);
-        #5;
-        sw[0] = 1; sw[1] = 1; #5; sw[1] = 0; $display("LED counter: %d", led);
-        #5;
-        sw[0] = 0; sw[1] = 1; #5; sw[1] = 0; $display("LED counter: %d", led);
-        #5;
-        sw[0] = 0; sw[1] = 1; #5; sw[1] = 0; $display("LED counter: %d", led);
-        #20;
-        $display("RGB LED4: %d%d%d, RGB LED5: %d%d%d", led4_r, led4_g, led4_b, led5_r, led5_g, led5_b);
+        #10
+        $display("entering SECRET sequence");
+        // Secret-Sequence = 01100100
+        press_bit(0);
+        press_bit(1);
+        press_bit(1);
+        press_bit(0);
+        press_bit(0);
+        press_bit(1);
+        press_bit(0);
+        press_bit(0);
 
-        $display("Start guessing sequence");
-        $display("LED counter: %d", led);
-        sw[0] = 0; sw[1] = 1; #5; sw[1] = 0; $display("LED counter: %d", led);
-        #5;
-        sw[0] = 1; sw[1] = 1; #5; sw[1] = 0; $display("LED counter: %d", led);
-        #5;
-        sw[0] = 1; sw[1] = 1; #5; sw[1] = 0; $display("LED counter: %d", led);
-        #5;
-        sw[0] = 0; sw[1] = 1; #5; sw[1] = 0; $display("LED counter: %d", led);
-        #5;
-        sw[0] = 0; sw[1] = 1; #5; sw[1] = 0; $display("LED counter: %d", led);
-        #5;
-        sw[0] = 1; sw[1] = 1; #5; sw[1] = 0; $display("LED counter: %d", led);
-        #5;
-        $display("RGB LED4: %d%d%d, RGB LED5: %d%d%d", led4_r, led4_g, led4_b, led5_r, led5_g, led5_b);
-        sw[0] = 1; sw[1] = 1; #5; sw[1] = 0; $display("LED counter: %d", led);
-        #20;
-        $display("RGB LED4: %d%d%d, RGB LED5: %d%d%d", led4_r, led4_g, led4_b, led5_r, led5_g, led5_b);
-        sw[0] = 0; sw[1] = 1; #5; sw[1] = 0; $display("LED counter: %d", led);
-        #20;
-        $display("RGB LED4: %d%d%d, RGB LED5: %d%d%d", led4_r, led4_g, led4_b, led5_r, led5_g, led5_b);
+        $display("entering GUESS sequence");
+        // Jetzt im GUESS_BIT → richtige Eingabe
+        press_bit(0);
+        press_bit(1);
+        press_bit(1);
+        press_bit(0);
+        press_bit(0);
+        press_bit(1);
+        press_bit(0);
+        press_bit(1);
+        press_bit(1);
+        press_bit(1);
+        press_bit(1);
+        press_bit(0);
+        press_bit(0);
+        press_bit(1);
+
+        // warten und beobachten
+        #2000; // genug lange warten
         $finish;
     end
 
 endmodule
-

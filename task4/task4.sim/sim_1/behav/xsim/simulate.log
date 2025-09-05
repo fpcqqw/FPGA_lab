@@ -1,0 +1,36 @@
+Time resolution is 1 ps
+entering SECRET sequence
+secretSequence: 10000000
+guessSequence: 00000000
+secretSequence: 10000000
+guessSequence: 00000000
+secretSequence: 10100000
+guessSequence: 00000000
+secretSequence: 10100000
+guessSequence: 00000000
+secretSequence: 10101000
+guessSequence: 00000000
+secretSequence: 10101000
+guessSequence: 00000000
+secretSequence: 10101010
+guessSequence: 00000000
+secretSequence: 10101010
+guessSequence: 00000000
+entering GUESS sequence
+secretSequence: 10101010
+guessSequence: 10000000
+secretSequence: 10101010
+guessSequence: 11000000
+secretSequence: 10101010
+guessSequence: 11000000
+secretSequence: 10101010
+guessSequence: 11000000
+secretSequence: 10101010
+guessSequence: 11000000
+secretSequence: 10101010
+guessSequence: 11000000
+secretSequence: 10101010
+guessSequence: 11000000
+secretSequence: 10101010
+guessSequence: 11000000
+$finish called at time : 2970 ns : File "C:/Users/Jenny2/Documents/02Semester/FPGA_lab/task4/task4.srcs/sim_1/new/testbench.v" Line 75

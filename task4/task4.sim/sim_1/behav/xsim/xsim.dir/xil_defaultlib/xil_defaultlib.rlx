@@ -3,6 +3,5 @@
 Nov  8 2024
 22:36:57
 C:/Users/Jenny2/Documents/02Semester/FPGA_lab/task4/task4.sim/sim_1/behav/xsim/glbl.v,1724786425,verilog,,,,glbl,,,,,,,,
-C:/Users/Jenny2/Documents/02Semester/FPGA_lab/task4/task4.srcs/sim_1/new/testbench.v,1756936525,verilog,,,,testbench,,,,,,,,
-C:/Users/Jenny2/Documents/02Semester/FPGA_lab/task4/task4.srcs/sources_1/new/new.v,1756936713,verilog,,C:/Users/Jenny2/Documents/02Semester/FPGA_lab/task4/task4.srcs/sim_1/new/testbench.v,,new_top,,,,,,,,
-C:/Users/Jenny2/Documents/02Semester/FPGA_lab/task4/task4.srcs/sources_1/new/top.v,1753479173,verilog,,,,top,,,,,,,,
+C:/Users/Jenny2/Documents/02Semester/FPGA_lab/task4/task4.srcs/sim_1/new/testbench.v,1757030989,verilog,,,,new_top_tb,,,,,,,,
+C:/Users/Jenny2/Documents/02Semester/FPGA_lab/task4/task4.srcs/sources_1/new/new.v,1757030832,verilog,,C:/Users/Jenny2/Documents/02Semester/FPGA_lab/task4/task4.srcs/sim_1/new/testbench.v,,new_top,,,,,,,,
